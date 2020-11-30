@@ -171,7 +171,7 @@ defmodule Ink do
     %{
       name: name(),
       pid: System.get_pid() |> String.to_integer(),
-      msg: message,
+      message: message,
       time: formatted_timestamp(timestamp),
       level: level(level, config.status_mapping),
       v: 0
@@ -183,7 +183,7 @@ defmodule Ink do
       name: name(),
       pid: System.get_pid() |> String.to_integer(),
       hostname: hostname(),
-      msg: message,
+      message: message,
       time: formatted_timestamp(timestamp),
       level: level(level, config.status_mapping),
       v: 0
